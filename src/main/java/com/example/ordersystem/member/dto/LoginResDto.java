@@ -1,4 +1,4 @@
-package com.example.ordersystem.common.dto;
+package com.example.ordersystem.member.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

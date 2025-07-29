@@ -1,7 +1,7 @@
 package com.example.ordersystem.member.service;
 
-import com.example.ordersystem.common.dto.LoginReqDto;
-import com.example.ordersystem.common.dto.MemberResDto;
+import com.example.ordersystem.member.dto.LoginReqDto;
+import com.example.ordersystem.member.dto.MemberResDto;
 import com.example.ordersystem.member.domain.Member;
 import com.example.ordersystem.member.dto.MemberCreateDto;
 import com.example.ordersystem.member.repository.MemberRepository;
@@ -22,7 +22,6 @@ import java.util.stream.Collectors;
 public class MemberService {
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder;
-
     public Long save(MemberCreateDto memberCreateDto) {
         if(memberRepository.findByEmail(memberCreateDto.getEmail()).isPresent()){
             throw new IllegalArgumentException("이미 존재하는 이메일입니다.");
