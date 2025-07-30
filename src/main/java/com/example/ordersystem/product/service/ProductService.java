@@ -6,6 +6,7 @@ import com.example.ordersystem.product.domain.Product;
 import com.example.ordersystem.product.dto.ProductCreateDto;
 import com.example.ordersystem.product.dto.ProductResDto;
 import com.example.ordersystem.product.dto.ProductSearchDto;
+import com.example.ordersystem.product.dto.ProductUpdateDto;
 import com.example.ordersystem.product.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.persistence.criteria.CriteriaBuilder;
@@ -61,6 +62,9 @@ public class ProductService {
                 throw new IllegalArgumentException("이미지 업로드 실패");
             }
 
+//        이미지 삭제시
+//            s3Client.deleteObject(a->a.bucket(버킷명).key(파일명));
+
 //        이미지 url추출
             String imgUrl = s3Client.utilities().getUrl(a -> a.bucket(bucket).key(fileName)).toExternalForm();
 
@@ -103,4 +107,42 @@ public class ProductService {
         Product product = productRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("상품정보없음"));
         return ProductResDto.fromEntity(product);
     }
+
+    public Long update(Long productId, ProductUpdateDto productUpdateDto) {
+        Product product = productRepository.findById(productId).orElseThrow(()->new EntityNotFoundException("없는 상품입니다."));
+        product.updateProduct(productUpdateDto);
+
+        if(productUpdateDto.getProductImage() != null && !productUpdateDto.getProductImage().isEmpty()) {
+
+//            기존이미지 삭제 : 파일명으로 삭제
+            String imageUrl = product.getImagePath();
+            String fileName = imageUrl.substring(imageUrl.lastIndexOf("/")+1);
+            s3Client.deleteObject(a->a.bucket(bucket).key(fileName));
+
+//            신규이미지 등록
+            String newFileName = "product-" + product.getId() + "-productImage-" + productUpdateDto.getProductImage().getOriginalFilename();
+            PutObjectRequest putObjectRequest = PutObjectRequest.builder()
+                    .bucket(bucket)
+                    .key(newFileName)
+                    .contentType(productUpdateDto.getProductImage().getContentType())
+                    .build();
+
+//        이미지를 업로드(byte형태로)
+            try {
+                s3Client.putObject(putObjectRequest, RequestBody.fromBytes(productUpdateDto.getProductImage().getBytes()));
+            } catch (Exception e) {
+                throw new IllegalArgumentException("이미지 업로드 실패");
+            }
+
+//        이미지 url추출
+            String newImageUrl = s3Client.utilities().getUrl(a -> a.bucket(bucket).key(fileName)).toExternalForm();
+            product.updateImageUrl(newImageUrl);
+        } else {
+//            s3에서 이미지 삭제 후 url 갱신
+            product.updateImageUrl(null);
+        }
+
+        return product.getId();
+    }
 }
+

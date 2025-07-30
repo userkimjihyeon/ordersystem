@@ -4,6 +4,7 @@ import com.example.ordersystem.common.dto.CommonDto;
 import com.example.ordersystem.product.dto.ProductSearchDto;
 import com.example.ordersystem.product.dto.ProductCreateDto;
 import com.example.ordersystem.product.dto.ProductResDto;
+import com.example.ordersystem.product.dto.ProductUpdateDto;
 import com.example.ordersystem.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -20,7 +21,7 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping("/create")
-    @PreAuthorize("hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> create(@ModelAttribute ProductCreateDto productCreateDto) {
         Long id = productService.save(productCreateDto);
         return new ResponseEntity<>(
@@ -51,6 +52,18 @@ public class ProductController {
                         .result(dto)
                         .status_code(HttpStatus.OK.value())
                         .status_message("상품상세조회 완료")
+                        .build(),
+                HttpStatus.OK);
+    }
+
+    @PutMapping("/update/{productId}")
+    public ResponseEntity<?> update(@PathVariable Long productId, @ModelAttribute ProductUpdateDto productUpdateDto) {
+        Long id = productService.update(productId, productUpdateDto);
+        return new ResponseEntity<>(
+                CommonDto.builder()
+                        .result(id)
+                        .status_code(HttpStatus.OK.value())
+                        .status_message("상품수정 완료")
                         .build(),
                 HttpStatus.OK);
     }
