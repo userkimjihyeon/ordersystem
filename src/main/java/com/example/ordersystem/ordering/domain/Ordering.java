@@ -22,11 +22,12 @@ public class Ordering extends BaseTimeEntity {
     @Builder.Default
     private OrderStatus orderStatus = OrderStatus.ORDERED;
 
-    //member1 : orderingN
+    //orderingN : member1
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", unique = true)
     private Member member;
 
+    //ordering1 : orderDetailN
     @OneToMany(mappedBy = "ordering", cascade = CascadeType.PERSIST, orphanRemoval = true)  //mappedBy = 자식클래스의 필드명
     @Builder.Default
     private List<OrderDetail> orderDetailList = new ArrayList<>();

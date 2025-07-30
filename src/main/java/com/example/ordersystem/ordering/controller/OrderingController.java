@@ -19,8 +19,8 @@ public class OrderingController {
     private final OrderingService orderingService;
 
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody List<OrderCreateDto> orderCreateDtos) {
-        Long id = orderingService.save(orderCreateDtos);  // 서비스에서 주문 생성
+    public ResponseEntity<?> create(@RequestBody List<OrderCreateDto> orderCreateDtos) {    //[{"productId":1, "productCount":3}, {"productId":2, "productCount":4}]
+        Long id = orderingService.save(orderCreateDtos);
         return ResponseEntity.status(HttpStatus.CREATED).body(
                 CommonDto.builder()
                         .result(id)

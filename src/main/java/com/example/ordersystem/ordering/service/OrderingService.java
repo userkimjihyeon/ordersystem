@@ -47,14 +47,14 @@ public class OrderingService {
 //                예외를 강제발생시킴으로써, 모든 임시저장사항들을 rollback처리
                 throw new IllegalArgumentException("재고가 부족합니다.");
             }
-            product.updateStockQuantity(dto.getProductCount());
+            product.updateStockQuantity(dto.getProductCount());   //재고=(재고-주문수량)
             OrderDetail orderDetail = OrderDetail.builder()
                     .product(product)
                     .quantity(dto.getProductCount())
-                    .ordering(ordering)     //왜함??
+                    .ordering(ordering) //자식orderDetail->부모ordering(양방향연결)
                     .build();
 //            orderDetailRepository.save(orderDetail);           // cascade 무(repo에 저장)
-            ordering.getOrderDetailList().add(orderDetail);      // cascade 유(ordering 객체에 OrderDetailList 컬럼에 저장. repo 불필요)
+            ordering.getOrderDetailList().add(orderDetail);      // cascade 유(ordering 객체의 OrderDetailList 컬럼에 저장) //부모->자식(양방향연결)
         }
         orderingRepository.save(ordering);
         return ordering.getId();
