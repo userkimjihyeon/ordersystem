@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class OrderCreateDto {
+public class OrderCreateDto {   //[{"productId":1, "productCount":3}, {"productId":2, "productCount":4}]
     private Long productId;
     private Integer productCount;
 

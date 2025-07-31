@@ -19,8 +19,8 @@ public class OrderingController {
     private final OrderingService orderingService;
 
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody List<OrderCreateDto> orderCreateDtos) {    //[{"productId":1, "productCount":3}, {"productId":2, "productCount":4}]
-        Long id = orderingService.save(orderCreateDtos);
+    public ResponseEntity<?> createConcurrent(@RequestBody List<OrderCreateDto> orderCreateDtos) {    //[{"productId":1, "productCount":3}, {"productId":2, "productCount":4}]
+        Long id = orderingService.createConcurrent(orderCreateDtos);
         return ResponseEntity.status(HttpStatus.CREATED).body(
                 CommonDto.builder()
                         .result(id)
@@ -41,4 +41,17 @@ public class OrderingController {
                         .status_message("주문목록조회 완료")
                         .build(), HttpStatus.OK);
     }
+
+//    내주문목록조회
+    @GetMapping("/myorders")
+    public ResponseEntity<?> myOrders() {
+        List<OrderListResDto> orderListResDtos = orderingService.myOrders();
+        return new ResponseEntity<>(
+                CommonDto.builder()
+                        .result(orderListResDtos)
+                        .status_code(HttpStatus.OK.value())
+                        .status_message("내주문목록조회 완료")
+                        .build(), HttpStatus.OK);
+    }
+
 }

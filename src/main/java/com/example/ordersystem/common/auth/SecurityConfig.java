@@ -37,7 +37,7 @@ public class SecurityConfig {
                         e.authenticationEntryPoint(jwtAuthenticationHandler)
                                 .accessDeniedHandler(jwtAuthorizationHandler)
                 )
-                .authorizeHttpRequests(a -> a.requestMatchers("/member/create", "/member/doLogin", "/member/refresh-at").permitAll().anyRequest().authenticated())
+                .authorizeHttpRequests(a -> a.requestMatchers("/member/create", "/member/doLogin", "/member/refresh-at", "/product/list").permitAll().anyRequest().authenticated())
                 .build();
     }
     private CorsConfigurationSource corsConfiguration(){

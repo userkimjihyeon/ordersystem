@@ -24,7 +24,7 @@ public class Ordering extends BaseTimeEntity {
 
     //orderingN : member1
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "member_id", unique = true)
+    @JoinColumn(name = "member_id")
     private Member member;
 
     //ordering1 : orderDetailN
