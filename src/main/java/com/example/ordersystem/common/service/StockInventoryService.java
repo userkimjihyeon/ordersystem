@@ -16,12 +16,14 @@ public class StockInventoryService {
 
 //    상품등록시 재고수량 세팅
     public void makeStockQuantity(Long productId, int quantity) {
-        redisTemplate.opsForValue().set(String.valueOf(productId), String.valueOf(quantity));
+        redisTemplate.opsForValue().set(String.valueOf(productId), String.valueOf(quantity));   //키productId:밸류quantity
     }
 //    주문성공시 재고수량 감소
     public int decreaseStockQuantity(Long productId, int orderQuantity) {
+//        재고 가져오기
         String remainObject = redisTemplate.opsForValue().get(String.valueOf(productId));
         int remains = Integer.parseInt(remainObject);
+//        재고와 주문수량 비교
         if(remains < orderQuantity) {
             return -1;
         } else {
