@@ -1,6 +1,7 @@
 package com.example.ordersystem.ordering.controller;
 
 import com.example.ordersystem.common.dto.CommonDto;
+import com.example.ordersystem.ordering.domain.Ordering;
 import com.example.ordersystem.ordering.dto.OrderCreateDto;
 import com.example.ordersystem.ordering.dto.OrderListResDto;
 import com.example.ordersystem.ordering.service.OrderingService;
@@ -51,6 +52,18 @@ public class OrderingController {
                         .result(orderListResDtos)
                         .status_code(HttpStatus.OK.value())
                         .status_message("내주문목록조회 완료")
+                        .build(), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/cancel/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<?> orderCancel(@PathVariable Long id) {
+        Ordering ordering = orderingService.cancel(id);
+        return new ResponseEntity<>(
+                CommonDto.builder()
+                        .result(ordering)
+                        .status_code(HttpStatus.OK.value())
+                        .status_message("주문취소 성공")
                         .build(), HttpStatus.OK);
     }
 

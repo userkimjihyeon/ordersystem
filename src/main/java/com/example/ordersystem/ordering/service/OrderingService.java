@@ -1,10 +1,12 @@
 package com.example.ordersystem.ordering.service;
 
+import com.example.ordersystem.common.service.SseAlarmService;
 import com.example.ordersystem.common.service.StockInventoryService;
 import com.example.ordersystem.common.service.StockRabbitMqService;
 import com.example.ordersystem.member.domain.Member;
 import com.example.ordersystem.member.repository.MemberRepository;
 import com.example.ordersystem.ordering.domain.OrderDetail;
+import com.example.ordersystem.ordering.domain.OrderStatus;
 import com.example.ordersystem.ordering.domain.Ordering;
 import com.example.ordersystem.ordering.dto.OrderCreateDto;
 import com.example.ordersystem.ordering.dto.OrderDetailResDto;
@@ -35,6 +37,7 @@ public class OrderingService {
     private final OrderDetailRepository orderDetailRepository;
     private final StockInventoryService stockInventoryService;
     private final StockRabbitMqService stockRabbitMqService;
+    private final SseAlarmService sseAlarmService;
 
     public Long save(List<OrderCreateDto> orderCreateDtoList) {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
@@ -137,6 +140,25 @@ public class OrderingService {
             stockRabbitMqService.publish(dto.getProductId(), dto.getProductCount());    //rabbitmq......
         }
         orderingRepository.save(ordering);
+
+//        주문성공시 admin 유저에게 알림메시지 전송
+        sseAlarmService.publishMessage("admin@naver.com", email, ordering.getId()); //(리시버,센더,메시지내용)
+
+
         return ordering.getId();
+    }
+
+    public Ordering cancel(Long id) {
+//        Ordering DB에 상태값변경 CANCELED
+        Ordering ordering = orderingRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("없는 id입니다."));
+        ordering.cancelStatus();
+
+        for(OrderDetail orderDetail : ordering.getOrderDetailList()) {
+//        rdb재고 업데이트
+            orderDetail.getProduct().cancelOrder(orderDetail.getQuantity());
+//        redis의 재고값 증가
+            stockInventoryService.increaseStockQuantity(orderDetail.getProduct().getId(), orderDetail.getQuantity());
+        }
+        return ordering;
     }
 }

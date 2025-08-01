@@ -31,4 +31,8 @@ public class Ordering extends BaseTimeEntity {
     @OneToMany(mappedBy = "ordering", cascade = CascadeType.PERSIST, orphanRemoval = true)  //mappedBy = 자식클래스의 필드명
     @Builder.Default
     private List<OrderDetail> orderDetailList = new ArrayList<>();
+
+    public void cancelStatus() {
+        this.orderStatus = OrderStatus.CANCELED;
+    }
 }

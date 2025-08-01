@@ -36,6 +36,7 @@ public class RabbitMqConfig {
         return connectionFactory;
     }
 
+    // ConnectionFactory 연결해 rabbitTemplate 생성
     @Bean
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);

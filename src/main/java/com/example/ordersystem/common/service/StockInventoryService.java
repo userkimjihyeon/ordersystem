@@ -33,7 +33,8 @@ public class StockInventoryService {
     }
 
 //    주문취소시 재고수량 증가
-    public void increaseStockQuantity() {
-
+    public int increaseStockQuantity(Long productId, int quantity) {
+        Long finalRemains = redisTemplate.opsForValue().increment(String.valueOf(productId), quantity);
+        return finalRemains.intValue();
     }
 }

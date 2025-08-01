@@ -28,7 +28,7 @@ public class StockRabbitMqService {
         rabbitTemplate.convertAndSend("stockDecreaseQueue", dto);   //stockDecreaseQueue 이름의 큐에 메시지(객체 큐) 발행
     }
 
-//    rabbitMq에 발행된 메시지를 수신
+//    rabbitMq에 발행된 메시지를 수신 (호출안해도 알아서 실행)
 //    Listner는 단일스레드로 메시지를 처리하므로, 동시성이슈발생X
     @RabbitListener(queues = "stockDecreaseQueue")
     @Transactional
@@ -36,7 +36,7 @@ public class StockRabbitMqService {
         String messageBody = new String(message.getBody());
         ObjectMapper objectMapper = new ObjectMapper();
         StockRabbitMqDto dto = objectMapper.readValue(messageBody, StockRabbitMqDto.class);
-        Product product = productRepository.findById(dto.getProductId()).orElseThrow(()->new EntityNotFoundException("product is not founded"));
+        Product product = productRepository.findById(dto.getProductId()).orElseThrow(()->new EntityNotFoundException("product is not found"));
         product.updateStockQuantity(dto.getProductCount());
         System.out.println(messageBody);
     }
