@@ -37,7 +37,16 @@ public class SecurityConfig {
                         e.authenticationEntryPoint(jwtAuthenticationHandler)
                                 .accessDeniedHandler(jwtAuthorizationHandler)
                 )
-                .authorizeHttpRequests(a -> a.requestMatchers("/member/create", "/member/doLogin", "/member/refresh-at", "/product/list").permitAll().anyRequest().authenticated())
+                .authorizeHttpRequests(a -> a.requestMatchers(
+                                "/member/create",
+                                "/member/doLogin",
+                                "/member/refresh-at",
+                                "/product/list",
+//                                swagger관련 api는 인증예외처리
+                                "/v3/api-docs/**",
+                                "/swagger-ui/**",
+                                "/swagger-ui.html")
+                        .permitAll().anyRequest().authenticated())
                 .build();
     }
     private CorsConfigurationSource corsConfiguration(){

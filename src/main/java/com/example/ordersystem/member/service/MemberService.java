@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -50,6 +51,11 @@ public class MemberService {
     public List<MemberResDto> findAll() {
         return memberRepository.findAll().stream()
                 .map(m->MemberResDto.fromEntity(m)).collect(Collectors.toList());
+    }
+    @Transactional(readOnly = true)
+    public MemberResDto findById(Long id) {
+        Member member = memberRepository.findById(id).orElseThrow(()->new EntityNotFoundException("member is not found"));
+        return MemberResDto.fromEntity(member);
     }
     @Transactional(readOnly = true)
     public MemberResDto myinfo() {

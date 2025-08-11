@@ -1,0 +1,528 @@
+2025-08-223 09:29 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 09:29 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 22228 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 09:29 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 393 ms. Found 4 JPA repository interfaces.
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 09:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2025-08-223 09:29 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 09:29 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 09:29 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 09:29 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 09:29 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 09:29 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 6671 ms
+2025-08-223 09:29 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 09:29 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 09:29 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 09:29 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 09:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 09:29 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1c787389
+2025-08-223 09:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 09:29 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 09:29 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 09:29 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 09:29 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 09:30 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 09:30 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: dad83916-346c-4680-aadb-a3460a6d89a2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 09:30 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 09:30 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 09:30 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 09:30 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 09:30 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 09:30 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 09:30 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-08-223 09:30 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#1c63b39a:0/SimpleConnection@374b1d85 [delegate=amqp://guest@127.0.0.1:5672/, localPort=63072]
+2025-08-223 09:30 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 20.346 seconds (process running for 31.85)
+2025-08-223 09:30 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 09:30 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 09:38 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 09:38 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 10:12 c.e.o.c.s.CommonExceptionHandler-이미 존재하는 이메일입니다.
+2025-08-223 10:12 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 10:28 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:29 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:29 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:29 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:29 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:30 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:30 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:30 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:30 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:32 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:32 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:35 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 10:36 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 11:28 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 11:28 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 18380 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 11:28 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 308 ms. Found 4 JPA repository interfaces.
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:28 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-08-223 11:28 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 11:28 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:28 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 11:28 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 11:28 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 11:28 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 5197 ms
+2025-08-223 11:28 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 11:28 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 11:28 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 11:28 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 11:28 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 11:28 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1859e55c
+2025-08-223 11:28 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 11:28 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 11:28 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 11:28 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 11:28 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 11:28 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 11:28 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: def670af-e0fa-4519-9a89-9384f997424d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 11:28 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 11:28 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:28 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 11:28 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 11:28 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#2fc51562:0/SimpleConnection@2e87a250 [delegate=amqp://guest@127.0.0.1:5672/, localPort=49761]
+2025-08-223 11:28 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 17.893 seconds (process running for 39.45)
+2025-08-223 11:28 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 11:28 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 11:28 o.s.web.servlet.DispatcherServlet-Completed initialization in 5 ms
+2025-08-223 11:33 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 11:33 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 10488 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 11:33 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 339 ms. Found 4 JPA repository interfaces.
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:33 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2025-08-223 11:33 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 11:33 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:33 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 11:33 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 11:33 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 11:33 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 5227 ms
+2025-08-223 11:33 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 11:33 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 11:33 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 11:33 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 11:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 11:33 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@d229912
+2025-08-223 11:33 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 11:33 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 11:33 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 11:33 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 11:33 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 11:33 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 11:33 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: c71582a4-30ae-4951-b60c-ba9f0df67201
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 11:33 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 11:33 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:33 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 11:33 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 11:33 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 11:33 o.s.web.servlet.DispatcherServlet-Completed initialization in 13 ms
+2025-08-223 11:33 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 11:33 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 11:33 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 11:33 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#642693c2:0/SimpleConnection@2e87a250 [delegate=amqp://guest@127.0.0.1:5672/, localPort=49847]
+2025-08-223 11:33 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 25.371 seconds (process running for 26.569)
+2025-08-223 11:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 11:43 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 11:43 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 20452 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 11:43 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 438 ms. Found 4 JPA repository interfaces.
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 11:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2025-08-223 11:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 11:43 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:43 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 11:43 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 11:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 11:43 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 5013 ms
+2025-08-223 11:43 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 11:43 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 11:43 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 11:43 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 11:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 11:43 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@d229912
+2025-08-223 11:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 11:43 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 11:43 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 11:43 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 11:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 11:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 11:43 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 3f707811-7bf7-4fcc-a14b-d7ea14236266
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 11:43 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 11:43 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 11:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 11:43 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 11:43 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#642693c2:0/SimpleConnection@49bf6f8c [delegate=amqp://guest@127.0.0.1:5672/, localPort=49960]
+2025-08-223 11:43 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 24.087 seconds (process running for 25.876)
+2025-08-223 11:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 11:43 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 11:43 o.s.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2025-08-223 12:31 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 12:31 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 21864 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 12:31 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 280 ms. Found 4 JPA repository interfaces.
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:31 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2025-08-223 12:31 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 12:31 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 12:31 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 12:31 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 12:31 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 12:31 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 4887 ms
+2025-08-223 12:31 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 12:31 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 12:31 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 12:31 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 12:31 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 12:31 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7a8b7e11
+2025-08-223 12:31 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 12:31 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 12:31 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 12:31 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 12:31 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 12:31 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 12:31 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: c88fcdf2-e91d-405d-89c0-89b73059e636
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 12:31 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 12:31 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 12:31 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 12:31 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 12:31 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#16021f6e:0/SimpleConnection@6782feb8 [delegate=amqp://guest@127.0.0.1:5672/, localPort=50642]
+2025-08-223 12:31 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 17.088 seconds (process running for 18.64)
+2025-08-223 12:31 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 12:31 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 12:31 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-08-223 12:33 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:32:56Z. Current time: 2025-08-11T03:33:00Z, a difference of 4450 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:33 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:33 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:32:56Z. Current time: 2025-08-11T03:33:00Z, a difference of 4584 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:33 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:32:56Z. Current time: 2025-08-11T03:33:00Z, a difference of 4592 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:34 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:34:24Z. Current time: 2025-08-11T03:34:49Z, a difference of 25324 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:34 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:34:24Z. Current time: 2025-08-11T03:34:49Z, a difference of 25345 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:34 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:34:24Z. Current time: 2025-08-11T03:34:49Z, a difference of 25350 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:35 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 12:35 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 19132 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 12:35 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 705 ms. Found 4 JPA repository interfaces.
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 12:35 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 71 ms. Found 0 Redis repository interfaces.
+2025-08-223 12:36 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 12:36 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 12:36 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 12:36 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 12:36 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 12:36 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 11974 ms
+2025-08-223 12:36 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 12:36 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 12:36 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 12:36 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 12:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 12:36 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7a8b7e11
+2025-08-223 12:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 12:36 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 12:36 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 12:36 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 12:36 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 12:36 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 12:36 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 3d256069-4d91-4d88-bfda-b220441a0a10
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 12:36 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 12:36 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 12:36 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 12:36 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 12:36 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#16021f6e:0/SimpleConnection@39b8313d [delegate=amqp://guest@127.0.0.1:5672/, localPort=50881]
+2025-08-223 12:36 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 46.088 seconds (process running for 49.464)
+2025-08-223 12:36 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 12:36 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 12:36 o.s.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:38Z, a difference of 88 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:38Z, a difference of 323 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:38Z, a difference of 337 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:40Z, a difference of 2101 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:40Z, a difference of 2313 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:40Z, a difference of 2321 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:41Z, a difference of 3995 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:42Z, a difference of 4272 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:42Z, a difference of 4288 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:44Z, a difference of 6061 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:44Z, a difference of 6385 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:37 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:37:38Z. Current time: 2025-08-11T03:37:44Z, a difference of 6403 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:38 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:38:44Z. Current time: 2025-08-11T03:38:55Z, a difference of 11304 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:38 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:38 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:38:44Z. Current time: 2025-08-11T03:38:55Z, a difference of 11515 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:38 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:38:44Z. Current time: 2025-08-11T03:38:55Z, a difference of 11520 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:40 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:40:11Z. Current time: 2025-08-11T03:40:28Z, a difference of 17838 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:40 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:40 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:40:11Z. Current time: 2025-08-11T03:40:29Z, a difference of 18140 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:40 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:40:11Z. Current time: 2025-08-11T03:40:29Z, a difference of 18156 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:15Z, a difference of 286388 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:17Z, a difference of 288603 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:17Z, a difference of 288841 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:17Z, a difference of 288856 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:20Z, a difference of 291223 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:20Z, a difference of 291465 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:20Z, a difference of 291479 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:22Z, a difference of 293192 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:22Z, a difference of 293362 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:46 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:41:29Z. Current time: 2025-08-11T03:46:22Z, a difference of 293373 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:50 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:50:07Z. Current time: 2025-08-11T03:50:07Z, a difference of 762 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:50 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 12:50 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:50:07Z. Current time: 2025-08-11T03:50:08Z, a difference of 1194 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 12:50 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:50:07Z. Current time: 2025-08-11T03:50:08Z, a difference of 1198 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 13:56 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m34s649ms96µs900ns).
+2025-08-223 14:00 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:51:08Z. Current time: 2025-08-11T05:00:53Z, a difference of 4185376 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 14:00 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 14:00 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:51:08Z. Current time: 2025-08-11T05:00:53Z, a difference of 4185470 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 14:00 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T03:51:08Z. Current time: 2025-08-11T05:00:53Z, a difference of 4185474 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 14:13 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 14:13 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 16292 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 14:13 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 165 ms. Found 4 JPA repository interfaces.
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 14:13 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-08-223 14:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 14:13 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 14:13 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 14:13 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 14:13 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 14:13 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3334 ms
+2025-08-223 14:13 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 14:13 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 14:13 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 14:13 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 14:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 14:13 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7a8b7e11
+2025-08-223 14:13 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 14:13 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 14:13 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 14:13 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 14:13 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 14:13 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 14:13 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 577f65f2-2693-4c76-b52f-2d6b9ecddc53
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 14:13 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 14:13 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 14:13 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 14:13 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 14:13 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#16021f6e:0/SimpleConnection@39b8313d [delegate=amqp://guest@127.0.0.1:5672/, localPort=52238]
+2025-08-223 14:13 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 11.973 seconds (process running for 12.805)
+2025-08-223 14:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 14:15 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 14:15 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-08-223 14:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T05:03:00Z. Current time: 2025-08-11T05:15:33Z, a difference of 753978 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 14:15 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 14:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T05:03:00Z. Current time: 2025-08-11T05:15:34Z, a difference of 754052 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 14:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T05:03:00Z. Current time: 2025-08-11T05:15:34Z, a difference of 754056 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 15:00 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m12s836ms766µs100ns).
+2025-08-223 15:07 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 15:07 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-223 15:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-08T00:28:03Z. Current time: 2025-08-11T06:15:28Z, a difference of 280045870 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 15:15 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 15:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-08T00:28:03Z. Current time: 2025-08-11T06:15:30Z, a difference of 280047168 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 15:15 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 15:15 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-08T00:28:03Z. Current time: 2025-08-11T06:15:33Z, a difference of 280050525 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-223 15:15 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-223 15:15 o.h.validator.internal.util.Version-HV000001: Hibernate Validator 8.0.2.Final
+2025-08-223 15:15 c.e.o.OrdersystemApplication-Starting OrdersystemApplication using Java 17.0.15 with PID 4024 (C:\Users\Playdata\Desktop\16\ordersystem\build\classes\java\main started by Playdata in C:\Users\Playdata\Desktop\16\ordersystem)
+2025-08-223 15:15 c.e.o.OrdersystemApplication-The following 1 profile is active: "prod"
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 198 ms. Found 4 JPA repository interfaces.
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.member.repository.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.ordering.repository.OrderingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.ordersystem.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-08-223 15:15 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2025-08-223 15:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-08-223 15:15 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-223 15:15 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2025-08-223 15:15 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-223 15:15 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-08-223 15:15 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2834 ms
+2025-08-223 15:15 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-223 15:15 org.hibernate.Version-HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-223 15:15 o.h.c.i.RegionFactoryInitiator-HHH000026: Second-level cache disabled
+2025-08-223 15:15 o.s.o.j.p.SpringPersistenceUnitInfo-No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-223 15:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-08-223 15:15 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1534bdc6
+2025-08-223 15:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-08-223 15:15 org.hibernate.orm.deprecation-HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-223 15:15 o.hibernate.orm.connections.pooling-HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-223 15:15 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-223 15:15 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-223 15:15 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-223 15:15 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration-
+
+Using generated security password: 25c8fc46-1461-47ff-82f0-4157b4cb090d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-223 15:15 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer-Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-223 15:15 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-08-223 15:15 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-08-223 15:15 o.s.a.r.c.CachingConnectionFactory-Attempting to connect to: localhost:5672
+2025-08-223 15:15 o.s.a.r.c.CachingConnectionFactory-Created new connection: connectionFactory#3638a852:0/SimpleConnection@35798cd0 [delegate=amqp://guest@127.0.0.1:5672/, localPort=54049]
+2025-08-223 15:15 c.e.o.OrdersystemApplication-Started OrdersystemApplication in 10.331 seconds (process running for 11.06)
+2025-08-223 15:18 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-223 15:18 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-08-223 15:18 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-08-223 15:20 o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier-Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-223 16:00 com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m14s496ms85µs600ns).

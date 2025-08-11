@@ -1,0 +1,88 @@
+2025-08-220 15:28 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:28 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:34 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:35 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:35 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 15:51 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 16:30 c.e.o.c.s.CommonExceptionHandler-Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.ordersystem.member.controller.MemberController.save(com.example.ordersystem.member.dto.MemberCreateDto) with 2 errors: [Field error in object 'memberCreateDto' on field 'password': rejected value [ADMIN]; codes [Size.memberCreateDto.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.password,password]; arguments []; default message [password],2147483647,8]; default message [password의 길이가 너무 짧습니다.]] [Field error in object 'memberCreateDto' on field 'name': rejected value []; codes [NotEmpty.memberCreateDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.name,name]; arguments []; default message [name]]; default message [이름은 필수 입력 항목입니다.]] 
+2025-08-220 16:39 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-220 16:40 c.e.o.c.s.CommonExceptionHandler-Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.ordersystem.member.controller.MemberController.save(com.example.ordersystem.member.dto.MemberCreateDto) with 2 errors: [Field error in object 'memberCreateDto' on field 'password': rejected value [ADMIN]; codes [Size.memberCreateDto.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.password,password]; arguments []; default message [password],2147483647,8]; default message [password의 길이가 너무 짧습니다.]] [Field error in object 'memberCreateDto' on field 'name': rejected value []; codes [NotEmpty.memberCreateDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.name,name]; arguments []; default message [name]]; default message [이름은 필수 입력 항목입니다.]] 
+2025-08-220 16:44 c.e.o.c.s.CommonExceptionHandler-이미 존재하는 이메일입니다.
+2025-08-220 16:52 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-220 16:59 c.e.o.c.s.CommonExceptionHandler-Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.ordersystem.member.controller.MemberController.save(com.example.ordersystem.member.dto.MemberCreateDto): [Field error in object 'memberCreateDto' on field 'password': rejected value [']; codes [Size.memberCreateDto.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.password,password]; arguments []; default message [password],2147483647,8]; default message [password의 길이가 너무 짧습니다.]] 
+2025-08-220 17:14 c.e.o.c.s.CommonExceptionHandler-Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.ordersystem.member.controller.MemberController.save(com.example.ordersystem.member.dto.MemberCreateDto) with 2 errors: [Field error in object 'memberCreateDto' on field 'password': rejected value [ADMIN]; codes [Size.memberCreateDto.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.password,password]; arguments []; default message [password],2147483647,8]; default message [password의 길이가 너무 짧습니다.]] [Field error in object 'memberCreateDto' on field 'name': rejected value []; codes [NotEmpty.memberCreateDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberCreateDto.name,name]; arguments []; default message [name]]; default message [이름은 필수 입력 항목입니다.]] 
+2025-08-220 17:19 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-220 17:33 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-220 17:36 c.e.o.c.s.CommonExceptionHandler-email 또는 비밀번호가 일치하지 않습니다.
+2025-08-220 17:38 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1484)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2268)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1481)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1322)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1369)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectHostPort(AbstractConnectionFactory.java:695)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:650)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 15 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336)
+	... 21 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:290)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-08-220 17:38 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:38 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:38 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:39 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:40 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-220 17:41 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).

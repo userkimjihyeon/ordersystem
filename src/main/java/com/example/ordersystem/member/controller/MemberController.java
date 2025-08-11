@@ -84,6 +84,16 @@ public class MemberController {
                         .status_message("회원목록조회완료")
                         .build(), HttpStatus.OK);
     }
+    @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<?> findById(@PathVariable("id") Long id){
+        return new ResponseEntity<>(
+                CommonDto.builder()
+                        .result(memberService.findById(id))
+                        .status_code(HttpStatus.OK.value())
+                        .status_message("회원상세조회완료")
+                        .build(), HttpStatus.OK);
+    }
     @GetMapping("/myinfo")
     public ResponseEntity<?> myInfo() {
         return new ResponseEntity<>(
