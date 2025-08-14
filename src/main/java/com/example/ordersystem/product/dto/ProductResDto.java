@@ -16,6 +16,7 @@ public class ProductResDto {
     private String category;
     private Integer price;
     private Integer stockQuantity;
+    private String imagePath;
 
 //    static임! -> entity->dto 변환이므로
     public static ProductResDto fromEntity(Product product) {
@@ -25,6 +26,7 @@ public class ProductResDto {
                 .category(product.getCategory())
                 .price(product.getPrice())
                 .stockQuantity(product.getStockQuantity())
+                .imagePath(product.getImagePath())
                 .build();
     }
 }

@@ -1,0 +1,116 @@
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951348 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951348 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951380 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951456 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951461 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951517 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951520 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951543 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-11T22:53:44Z. Current time: 2025-08-12T00:32:55Z, a difference of 5951547 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 09:32 c.e.o.c.s.CommonExceptionHandler-잘못된 토큰입니다.
+2025-08-224 09:34 c.e.o.c.s.CommonExceptionHandler-없는 id입니다.
+2025-08-224 09:34 c.e.o.c.s.CommonExceptionHandler-없는 id입니다.
+2025-08-224 09:34 c.e.o.c.s.CommonExceptionHandler-없는 id입니다.
+2025-08-224 11:17 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-12T00:25:35Z. Current time: 2025-08-12T02:17:25Z, a difference of 6710699 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 11:17 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-224 11:17 c.e.o.common.auth.JwtTokenFilter-JWT expired at 2025-08-12T00:25:35Z. Current time: 2025-08-12T02:17:53Z, a difference of 6738913 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-08-224 11:17 c.e.o.c.a.JwtAuthenticationHandler-Full authentication is required to access this resource
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1484)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2268)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1481)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1322)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1369)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectHostPort(AbstractConnectionFactory.java:695)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:650)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 15 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336)
+	... 21 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:290)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:02 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:03 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:04 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:05 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:06 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:07 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).
+2025-08-224 17:07 o.s.a.r.l.SimpleMessageListenerContainer-Failed to check/redeclare auto-delete queue(s).

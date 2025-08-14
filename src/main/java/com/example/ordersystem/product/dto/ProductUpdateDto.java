@@ -16,5 +16,4 @@ public class ProductUpdateDto {
     private Integer price;
     private Integer stockQuantity;
     private MultipartFile productImage;
-
 }
